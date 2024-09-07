@@ -38,15 +38,10 @@ class Widget : public QWidget {
   void ShowPosition();
   void ChangeFontSize(int size);
 
- protected:
-  virtual void wheelEvent(QWheelEvent *event) override;
-  virtual void keyPressEvent(QKeyEvent *event) override;
-  virtual void keyReleaseEvent(QKeyEvent *event) override;
-
  private:
-  bool keyControlPressed = false;
   const int defaultFontSize = 13;
 
+ private:
   Ui::Widget *ui;
 };
 

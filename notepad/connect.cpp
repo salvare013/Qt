@@ -124,7 +124,7 @@ void Widget::ChangeFontSize(int size) {
   }
   int fontSize = ui->textEdit->font().pointSize();
   if (size > 0) {
-    fontSize++;
+    fontSize += size;
   } else {
     if (fontSize > 9) {
       fontSize--;

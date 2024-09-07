@@ -109,7 +109,7 @@ color: rgb(0, 0, 0);</string>
     </widget>
    </item>
    <item>
-    <widget class="QTextEdit" name="textEdit">
+    <widget class="XTextEdit" name="textEdit">
      <property name="styleSheet">
       <string notr="true"/>
      </property>
@@ -173,6 +173,13 @@ color: rgb(0, 0, 0);</string>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>XTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>xtextedit.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -20,6 +20,7 @@ set(PROJECT_SOURCES
         connect.cpp
         widget.h
         widget.ui
+        xtextedit.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

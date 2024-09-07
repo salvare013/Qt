@@ -59,26 +59,3 @@ Widget::~Widget() {
 void Widget::closeEvent(QCloseEvent *event) {
   CloseWindow();
 }
-void Widget::wheelEvent(QWheelEvent *event) {
-  if (keyControlPressed) {
-    if (event->angleDelta().y() >= 0) {
-      ChangeFontSize(1);
-    } else {
-      ChangeFontSize(-1);
-    }
-    event->accept();
-  }
-  QWidget::wheelEvent(event);
-}
-void Widget::keyPressEvent(QKeyEvent *event) {
-  if (event->key() == Qt::Key_Control) {
-    keyControlPressed = true;
-  }
-  QWidget::keyPressEvent(event);
-}
-void Widget::keyReleaseEvent(QKeyEvent *event) {
-  if (event->key() == Qt::Key_Control) {
-    keyControlPressed = false;
-  }
-  QWidget::keyReleaseEvent(event);
-}
